@@ -59,6 +59,7 @@ Output:
 Deliverable 2: The Employees Eligible for the Mentorship Program
 
 -- Create mentorship_eligibility.csv
+
 Query:
 SELECT DISTINCT ON (employees.emp_no)
 employees.emp_no,
