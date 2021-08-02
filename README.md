@@ -57,6 +57,7 @@ Output:
 ![alt tag](https://github.com/elrvra/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles.png)
 
 Deliverable 2: The Employees Eligible for the Mentorship Program
+
 -- Create mentorship_eligibility.csv
 Query:
 SELECT DISTINCT ON (employees.emp_no)
