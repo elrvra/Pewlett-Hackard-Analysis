@@ -82,5 +82,7 @@ Output:
 Deliverable 3: A written report on the employee database analysis (README.md)
 
 1. How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+-- Of the 300,024 employees, 90,398 roles will need to be filled.
 
 2. Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett-Hackard employees?
+-- Yes, there are more than enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett-Hackard employees: (a) 29414 Senior Engineer retirees vs 213 Senior Engineer mentees (b) 28254 Senior Staff retirees vs 633 Senior Staff mentees (c) 14222 Engineer retirees vs 623 Engineer mentees (d) 12243 Staff retirees vs 271 Staff mentees (e) 4502 Technique Leader retirees vs 99 Technique Leader mentees (f) 1761 Assistant Engineer retirees vs 101 Assistant Engineer mentees (g) 2 Manager retirees vs 0 Manager mentees.
