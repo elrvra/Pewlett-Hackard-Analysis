@@ -9,6 +9,7 @@ Now that Bobby has proven his SQL chops, his manager has given both of you two m
 Deliverable 1: The Number of Retiring Employees by Title
 
 -- Create retirement_titles.csv
+
 Query:
 SELECT employees.emp_no, 
 	employees.first_name,
@@ -23,8 +24,10 @@ ON employees.emp_no = titles.emp_no
 WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 
 Output:
+![alt tag](https://github.com/elrvra/Pewlett-Hackard-Analysis/blob/main/Data/retirement_titles.png)
 
 -- Use Dictinct with Orderby to remove duplicate rows & Create unique_titles.csv
+
 Query:
 SELECT DISTINCT ON (retirement_titles.emp_no) retirement_titles.emp_no,
 retirement_titles.first_name,
@@ -36,8 +39,10 @@ FROM retirement_titles
 ORDER BY retirement_titles.emp_no, retirement_titles.to_date DESC;
 
 Output:
+![alt tag](https://github.com/elrvra/Pewlett-Hackard-Analysis/blob/main/Data/unique_titles.png)
 
 --Create retiring_titles.csv
+
 Query:
 SELECT COUNT(unique_titles.emp_no),
 unique_titles.title
@@ -47,6 +52,7 @@ GROUP BY title
 ORDER BY COUNT(title) DESC;
 
 Output:
+![alt tag](https://github.com/elrvra/Pewlett-Hackard-Analysis/blob/main/Data/retiring_titles.png)
 
 Deliverable 2: The Employees Eligible for the Mentorship Program
 -- Create mentorship_eligibility.csv
