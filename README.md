@@ -8,6 +8,7 @@ Now that Bobby has proven his SQL chops, his manager has given both of you two m
 
 Deliverable 1: The Number of Retiring Employees by Title
 **Note: Please refer to "Employee_Database_challenge.sql" file enclosed, although its copy/pasted as follows
+
 -- Create retirement_titles.csv
 
 Query: 
