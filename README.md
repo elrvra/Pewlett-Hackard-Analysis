@@ -75,7 +75,7 @@ FROM employees
 WHERE (birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 
 Output:
-
+![alt tag](https://github.com/elrvra/Pewlett-Hackard-Analysis/blob/main/Data/mentorship_eligibility.png)
 
 ## Summary
 
