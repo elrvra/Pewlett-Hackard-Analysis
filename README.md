@@ -7,16 +7,16 @@ Now that Bobby has proven his SQL chops, his manager has given both of you two m
 ## Results
 
 Deliverable 1: The Number of Retiring Employees by Title
-
+**Note: Please refer to "Employee_Database_challenge.sql" file enclosed, although its copy/pasted as follows
 -- Create retirement_titles.csv
 
-Query:
+Query: 
 SELECT employees.emp_no, 
-	employees.first_name,
-	employees.last_name,
-	titles.title,
-	titles.from_date,
-	titles.to_date
+employees.first_name,
+employees.last_name,
+titles.title,
+titles.from_date,
+titles.to_date
 INTO retirement_titles
 FROM employees
 INNER JOIN titles
@@ -59,19 +59,19 @@ Deliverable 2: The Employees Eligible for the Mentorship Program
 -- Create mentorship_eligibility.csv
 Query:
 SELECT DISTINCT ON (employees.emp_no)
-    employees.emp_no,
-    employees.first_name,
-    employees.last_name,
-	employees.birth_date,
-	dept_emp.from_date,
-	dept_emp.to_date,
-	titles.title
+employees.emp_no,
+employees.first_name,
+employees.last_name,
+employees.birth_date,
+dept_emp.from_date,
+dept_emp.to_date,
+titles.title
 INTO mentorship_eligibility
 FROM employees
-	LEFT JOIN dept_emp
-	ON (employees.emp_no = dept_emp.emp_no) 
-	LEFT JOIN titles
-	ON (employees.emp_no = dept_emp.emp_no)
+LEFT JOIN dept_emp
+ON (employees.emp_no = dept_emp.emp_no) 
+LEFT JOIN titles
+ON (employees.emp_no = dept_emp.emp_no)
 WHERE (birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 
 Output:
